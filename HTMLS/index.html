@@ -1,0 +1,428 @@
+<!DOCTYPE html> 
+<!-- Designined by AGA - ATSEP  -->
+<html lang="en" dir="ltr"> 
+  <head>
+    <meta charset="UTF-8">
+    <title> RWY Form | ONDA</title>
+    <!-- Main css -->
+    <link rel="stylesheet" href="./Styles/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Main JS-->
+    <script src="Js/Main.js"></script>
+    <script language="javascript" type="text/javascript" src="eel.js"></script>
+   </head>
+
+<body>
+
+  <div class="container">
+    
+<!-- Title of the Section...................................................................... -->
+    <div class="title">Section calcul des performances de l’avion</div>
+<!-- Title of the Section...................................................................... -->
+
+<!-- Main Content.............................................................................. -->
+
+    <div class="content">
+      
+<!-- First Section............................................................................. -->
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">ID d'emplacement</span>
+            <input type="text" placeholder="Entrer votre Code" id="idplace" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Date&Time</span>
+            <input type="Time" placeholder="Enter your username" id="time" required>
+          </div>
+          <div class="input-box">
+            <span class="details">ID de Piste</span>
+            <input type="text" placeholder="Entrer votre ID " id="idpiste" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Partie</span>                           
+            <select id="1LRC">
+            <option value="L">L</option>
+            <option value="R">R</option>
+            <option value="C">C</option>
+            <option value="" disabled selected hidden>[L] ou [C] ou [R]</option>
+            </select>
+          </div>
+        </div>
+      </form>
+
+      <span class="details">RWYCC : </span> 
+      <form action="#">
+        <div class="user-details3">
+          <div class="input-box3">             
+            <select id="RWYCC1" >
+            <option value="6">6</option>
+            <option value="5">5</option>
+            <option value="4">4</option>
+            <option value="3">3</option>
+            <option value="2">2</option>
+            <option value="1">1</option>
+            <option value="0">0</option>
+            <option value="" disabled selected hidden> [L] / . / .</option>
+            </select>
+          </div>
+          <div class="input-box3">             
+            <select id="RWYCC2">
+            <option value="6">6</option>
+            <option value="5">5</option>
+            <option value="4">4</option>
+            <option value="3">3</option>
+            <option value="2">2</option>
+            <option value="1">1</option>
+            <option value="0">0</option>
+            <option value="" disabled selected hidden> . / [C] / .</option>
+            </select>
+          </div>
+          <div class="input-box3">             
+            <select id="RWYCC3">
+            <option value="6">6</option>
+            <option value="5">5</option>
+            <option value="4">4</option>
+            <option value="3">3</option>
+            <option value="2">2</option>
+            <option value="1">1</option>
+            <option value="0">0</option>
+            <option value="" disabled selected hidden>. / . / [R]</option>
+            </select>
+          </div>
+        </div>
+      </form>
+
+      <span class="details">RWYCC % : </span> 
+      <form action="#">
+        <div class="user-details3">
+        <div class="input-box3">
+          <select id="pRWYCC1">
+            <option value="25">Entre 10	–	25%</option>
+            <option value="50">Entre 26	–	50%</option>
+            <option value="75">Entre 51	–	75%</option>
+            <option value="100">Entre 76–	100%</option>
+            <option value="" disabled selected hidden>% évalué [L] / . / .</option>
+          </select>
+        </div>
+        <div class="input-box3">
+          <select id="pRWYCC2">
+            <option value="25">Entre 10	–	25%</option>
+            <option value="50">Entre 26	–	50%</option>
+            <option value="75">Entre 51	–	75%</option>
+            <option value="100">Entre 76–	100%</option>
+            <option value="" disabled selected hidden>% évalué . / [C] / .</option>
+          </select>
+        </div>
+        <div class="input-box3">
+          <select id="pRWYCC3">
+            <option value="25">Entre 10	–	25%</option>
+            <option value="50">Entre 26	–	50%</option>
+            <option value="75">Entre 51	–	75%</option>
+            <option value="100">Entre 76–	100%</option>
+            <option value="" disabled selected hidden>% évalué . / . / [R]</option>
+          </select>
+        </div>
+          
+        </div>
+      </form>
+
+      <span class="details">Description de l’état de chaque tiers de piste :</span>
+      <form action="#">
+        <div class="user-details3">
+          <div class="input-box3">             
+            <select id="Desc1">
+              <option value="GEL">GEL</option>
+              <option value="SÈCHE">SÈCHE</option>
+              <option value="GLACE">GLACE</option>
+              <option value="MOUILLÉE">MOUILLÉE</option>
+              <option value="NEIGE SÈCHE">NEIGE SÈCHE</option>
+              <option value="NEIGE FONDANTE">NEIGE FONDANTE</option>
+              <option value="NEIGE MOUILLÉE">NEIGE MOUILLÉE</option>
+              <option value="GLACE MOUILLÉE">GLACE MOUILLÉE</option>
+              <option value="EAU STAGNANTE">EAU STAGNANTE</option>
+              <option value="NEIGE COMPACTÉE">NEIGE COMPACTÉE</option>
+              <option value="NEIGE SÈCHE SUR GLACE">NEIGE SÈCHE SUR GLACE</option>
+              <option value="NEIGE MOUILLÉE SUR GLACE">NEIGE MOUILLÉE SUR GLACE</option>
+              <option value="EAU SUR NEIGE COMPACTÉE">EAU SUR NEIGE COMPACTÉE</option>
+              <option value="NEIGE SÈCHE SUR NEIGE COMPACTÉE">NEIGE SÈCHE SUR NEIGE COMPACTÉE</option>
+              <option value="NEIGE MOUILLÉE SUR NEIGE COMPACTÉE">NEIGE MOUILLÉE SUR NEIGE COMPACTÉE</option>
+              <option value="NR" disabled selected hidden> [L] / . / .</option>
+            </select>
+          </div>
+          <div class="input-box3">             
+            <select id="Desc2">
+              <option value="GEL">GEL</option>
+              <option value="SÈCHE">SÈCHE</option>
+              <option value="GLACE">GLACE</option>
+              <option value="MOUILLÉE">MOUILLÉE</option>
+              <option value="NEIGE SÈCHE">NEIGE SÈCHE</option>
+              <option value="NEIGE FONDANTE">NEIGE FONDANTE</option>
+              <option value="NEIGE MOUILLÉE">NEIGE MOUILLÉE</option>
+              <option value="GLACE MOUILLÉE">GLACE MOUILLÉE</option>
+              <option value="EAU STAGNANTE">EAU STAGNANTE</option>
+              <option value="NEIGE COMPACTÉE">NEIGE COMPACTÉE</option>
+              <option value="NEIGE SÈCHE SUR GLACE">NEIGE SÈCHE SUR GLACE</option>
+              <option value="NEIGE MOUILLÉE SUR GLACE">NEIGE MOUILLÉE SUR GLACE</option>
+              <option value="EAU SUR NEIGE COMPACTÉE">EAU SUR NEIGE COMPACTÉE</option>
+              <option value="NEIGE SÈCHE SUR NEIGE COMPACTÉE">NEIGE SÈCHE SUR NEIGE COMPACTÉE</option>
+              <option value="NEIGE MOUILLÉE SUR NEIGE COMPACTÉE">NEIGE MOUILLÉE SUR NEIGE COMPACTÉE</option>
+              <option value="NR" disabled selected hidden> . / [C] / .</option>
+            </select>
+          </div>
+          <div class="input-box3">             
+            <select id="Desc3">
+              <option value="GEL">GEL</option>
+              <option value="SÈCHE">SÈCHE</option>
+              <option value="GLACE">GLACE</option>
+              <option value="MOUILLÉE">MOUILLÉE</option>
+              <option value="NEIGE SÈCHE">NEIGE SÈCHE</option>
+              <option value="NEIGE FONDANTE">NEIGE FONDANTE</option>
+              <option value="NEIGE MOUILLÉE">NEIGE MOUILLÉE</option>
+              <option value="GLACE MOUILLÉE">GLACE MOUILLÉE</option>
+              <option value="EAU STAGNANTE">EAU STAGNANTE</option>
+              <option value="NEIGE COMPACTÉE">NEIGE COMPACTÉE</option>
+              <option value="NEIGE SÈCHE SUR GLACE">NEIGE SÈCHE SUR GLACE</option>
+              <option value="NEIGE MOUILLÉE SUR GLACE">NEIGE MOUILLÉE SUR GLACE</option>
+              <option value="EAU SUR NEIGE COMPACTÉE">EAU SUR NEIGE COMPACTÉE</option>
+              <option value="NEIGE SÈCHE SUR NEIGE COMPACTÉE">NEIGE SÈCHE SUR NEIGE COMPACTÉE</option>
+              <option value="NEIGE MOUILLÉE SUR NEIGE COMPACTÉE">NEIGE MOUILLÉE SUR NEIGE COMPACTÉE</option>
+              <option value="NR" disabled selected hidden> . / . / [R]</option>
+            </select>
+          </div>
+        </div>
+      </form>
+
+      <span class="details">Épaisseur des contaminants solides [en mm]</span>
+      <form action="#">
+        <div class="user-details3">             
+            <div class="input-box3">
+              <input type="text" placeholder="[L] / . / ." id="epaisseur1" required>
+            </div>
+        
+                    
+          <div class="input-box3">
+            <input type="text" placeholder=". /[C]/ ." id="epaisseur2" required>
+          </div>
+      
+              
+        <div class="input-box3">
+          <input type="text" placeholder=". / . /R]" id="epaisseur3" required>
+        </div>
+        </div>
+      </form>
+
+      <form action="#">
+        <div class="user-details3">
+          
+          <div class="input-box3">
+            <span class="details3">Largeur de la piste</span>
+            <input type="text" placeholder="Entrer la Largeur en [m]" id="largeur1" required>
+          </div>
+          
+        </div>
+      </form>
+<!-- First Section............................................................................. -->
+
+
+<!-- Title of the Section...................................................................... -->
+      <div class="title">Section conscience de la situation</div>
+<!-- Title of the Section...................................................................... -->
+
+<!-- Second Section............................................................................ -->
+
+      <form action="#">
+        <div class="user-details2">
+          <div class="input-box2">
+            <span class="details2">Longueur réduite de piste</span>
+            <input type="text" placeholder="Entrer la Longueur" id="longueur" required>
+          </div>
+          <div class="input-box2">
+            <span class="details2">Partie</span>                           
+            <select id="2LRC">
+            <option value="L">L</option>
+            <option value="R">R</option>
+            <option value="C">C</option>
+            <option value="" selected>[L] ou [C] ou [R]</option>
+            </select>
+          </div>
+        </div>
+      </form>
+
+      <form action="#">
+        <div class="user-details2">
+          <div class="input-box2">
+            <span class="details2">Neige fine et sèche sur la piste</span>
+            <select id="neige">
+              <option value="NEIGE FINE	ET SÈCHE.">NEIGE FINE	ET SÈCHE</option>
+              <option value="" selected></option>
+              </select>
+          </div>
+        </div>
+      </form>
+
+      <form action="#">
+        <div class="user-details2">
+          <div class="input-box2">
+            <span class="details2">Sable non adhérent sur la piste</span>
+            <input type="text" placeholder="Entrer la valeur" id="sable" required>
+          </div>
+          <div class="input-box2">
+            <span class="details2">Partie</span>                           
+            <select id="3LRC">
+            <option value="L">L</option>
+            <option value="R">R</option>
+            <option value="C">C</option>
+            <option value="" selected>[L] ou [C] ou [R]</option>
+            </select>
+          </div>
+        </div>
+      </form>
+
+      <form action="#">
+        <div class="user-details2">
+          <div class="input-box2">
+            <span class="details2">Traitement chimique sur la piste</span>
+            <input type="text" placeholder="Entrer la valeur" id="chimie" required>
+          </div>
+          <div class="input-box2">
+            <span class="details2">Partie</span>                           
+            <select id="4LRC">
+            <option value="L">L</option>
+            <option value="R">R</option>
+            <option value="C">C</option>
+            <option value="" selected>[L] ou [C] ou [R]</option>
+            </select>
+          </div>
+        </div>
+      </form>
+
+      <span class="details">Congères sur la piste</span>
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <input type="text" placeholder="RWY" id="RWYcongere" required>
+          </div>
+          <div class="input-box">
+            <select id="5LRC">
+            <option value="L">L</option>
+            <option value="R">R</option>
+            <option value="C">C</option>
+            <option value="" selected>[L] ou [C] ou [R]</option>
+            </select>
+          </div>
+          <div class="input-box">
+            <input type="text" placeholder="Distance (m)" id="Dis1" required>
+          </div>
+          <div class="input-box">
+            <select id="6LRC">
+            <option value="L">L</option>
+            <option value="R">R</option>
+            <option value="C">C</option>
+            <option value="" selected>[L] ou [R] ou [LR]</option>
+            </select>
+          </div>
+        </div>
+      </form>
+      
+      <span class="details">Congères sur la voie de circulation</span>
+      <form action="#">
+        <div class="user-details3">
+          <div class="input-box3">
+            <input type="text" placeholder="TWY" id="TWYcongere" required>
+          </div>
+          <div class="input-box3">
+            <input type="text" placeholder="Distance (m)" id="Dis2" required>
+          </div>
+          <div class="input-box3">
+            <select id="7LRC">
+            <option value="L">L</option>
+            <option value="R">R</option>
+            <option value="C">C</option>
+            <option value="" selected>[L] ou [R] ou [LR]</option>
+            </select>
+          </div>
+        </div>
+      </form>
+
+      <span class="details">Congères à proximité de la piste</span>
+      <form action="#">
+        <div class="user-details2">
+          <div class="input-box2">
+            <input type="text" placeholder="RWY" id="RWYcongere2" required>
+          </div>
+
+          <div class="input-box2">
+            <select id="8LRC">
+            <option value="L">L</option>
+            <option value="R">R</option>
+            <option value="C">C</option>
+            <option value="" selected>[L] ou [C] ou [R]</option>
+            </select>
+          </div>
+        </div>
+      </form>
+
+      <span class="details">État des voies de circulation</span>
+      <form action="#">
+        <div class="user-details2">
+          <div class="input-box2">
+            <input type="text" placeholder="TWY" id="TWY" required>
+          </div>
+          <div class="input-box2">
+            <select id="TWYstate">
+            <option value="5">BONNE</option>
+            <option value="4">BONNE	À	MOYENNE</option>
+            <option value="3">MOYENNE</option>
+            <option value="3">MOYENNE	À	MÉDIOCRE</option>
+            <option value="3">MÉDIOCRE</option>
+            <option value="3">NFÉRIEURE	À	MÉDIOCRE</option>
+            <option value="" selected>État de la piste</option>
+            </select>
+          </div>
+        </div>
+      </form>
+
+      <span class="details">État des aires de trafic</span>
+      <form action="#">
+        <div class="user-details2">
+          <div class="input-box2">
+            <input type="text" placeholder="AIRE DE TRAFIC" id="AIREstate" required>
+          </div>
+        </div>
+      </form>
+
+      <span class="details1">Extra</span>
+      <form action="#">
+        <div class="user-details1">
+          <div class="input-box1">
+            <input type="text" placeholder="Comment" id="Extra" required>
+          </div>
+        </div>
+      </form>
+
+
+
+
+<!-- Second Section............................................................................ -->
+
+<!-- Confirm Section........................................................................... -->
+
+      <form>
+        <div class="button">
+          <input type="button" value="Confirmer" onclick="Pickup()">
+        </div>
+        <span class="details" id="state"></span>
+      </form>
+      <!-- <button type="button" onclick="Pickup()">Confirmer</button> -->
+
+<!-- Confirm Section........................................................................... -->
+
+    </div>
+
+<!-- Main Content.............................................................................. -->
+
+  </div>
+
+</body>
+</html>
