@@ -10,7 +10,7 @@ def Processing(Id, Idpiste, time, lrc_1, RWYCC1, RWYCC2, RWYCC3, pRWYCC1, pRWYCC
     
     #Section 1
 
-    file = open("Section_1.txt","a")
+    file = open("Rapport.txt","a")
 
     file.write(Id)
 
@@ -49,72 +49,93 @@ def Processing(Id, Idpiste, time, lrc_1, RWYCC1, RWYCC2, RWYCC3, pRWYCC1, pRWYCC
     file.write("/")
     file.write(epaisseur3)
     file.write("/")
-    file.write(largeur1)
+
+    if len(largeur1) != 0:
+        file.write(largeur1)
+
+    file.write('\n')
     file.write('\n') 
-    file.close()    
+    #file.close()    
     
     
     #Section 2
-    file = open("Section_2.txt","a")
+    #file = open("Section_2.txt","a")
 
-    file.write("RWY ") 
-    file.write(Idpiste)
-    file.write(lrc_2)
-    file.write(" LDA RÉDUITE À ") 
-    file.write(longueur)
-    file.write(". ")
+    if len(longueur) != 0:
+        file.write("RWY ") 
+        file.write(Idpiste)
+        file.write(lrc_2)
+        file.write(" LDA RÉDUITE À ") 
+        file.write(longueur)
+        file.write(". ")
 
-    file.write(neige)
-    file.write(". ")
+    if len(neige) != 0:
+        file.write(neige)
+        file.write(". ")
+
+    if len(sable) != 0:
+        file.write("RWY ")
+        file.write(sable)
+        file.write(lrc_3)
+        file.write(" SABLE NON ADHÉRENT. ")
     
-    file.write("RWY ")
-    file.write(sable)
-    file.write(lrc_3)
-    file.write(" SABLE NON ADHÉRENT. ")
-    
-    file.write("RWY ")
-    file.write(chimie)
-    file.write(lrc_4)
-    file.write(" TRAITÉE CHIMIQUEMENT. ")
+    if len(chimie) != 0:
+        file.write("RWY ")
+        file.write(chimie)
+        file.write(lrc_4)
+        file.write(" TRAITÉE CHIMIQUEMENT. ")
 
-    file.write("RWY ")
-    file.write(RWYcongere)
-    file.write(lrc_5)
-    file.write(" CONGÈRE ")
-    file.write(Dis1)
-    file.write(lrc_6)
-    file.write(" FM CL. ")
+    if len(RWYcongere) != 0:
+        file.write("RWY ")
+        file.write(RWYcongere)
+        file.write(lrc_5)
+        file.write(" CONGÈRE ")
+        file.write(Dis1)
+        file.write(lrc_6)
+        file.write(" FM CL. ")
 
-    file.write("TWY ")
-    file.write(TWYcongere)
-    file.write(" CONGÈRE ")
-    file.write(lrc_7)
-    file.write(Dis2)
-    file.write(" FM CL. ")
+    if len(TWYcongere) != 0:
+        file.write("TWY ")
+        file.write(TWYcongere)
+        file.write(" CONGÈRE ")
+        file.write(lrc_7)
+        file.write(Dis2)
+        file.write(" FM CL. ")
 
-    file.write("RWY ")
-    file.write(RWYcongere2)
-    file.write(lrc_8)
-    file.write(" CONGÈRES ADJACENTS. ")
+    if len(RWYcongere2) != 0:
+        file.write("RWY ")
+        file.write(RWYcongere2)
+        file.write(lrc_8)
+        file.write(" CONGÈRES ADJACENTS. ")
 
-    file.write("TWY ")
-    file.write(TWY)
-    file.write(" ")
-    file.write(TWYstate)
-    file.write(". ")
+    if len(TWY) != 0:
+        file.write("TWY ")
+        file.write(TWY)
+        file.write(" ")
+        file.write(TWYstate)
+        file.write(". ")
 
-    file.write("AIRE DE TRAFIC ")
-    file.write(AIREstate)
-    file.write("MÉDIOCRE. ")
+    if len(AIREstate) != 0:
+        file.write("AIRE DE TRAFIC ")
+        file.write(AIREstate)
+        file.write("MÉDIOCRE. ")
 
-    file.write(Extra)
+    if len(Extra) != 0:
+        file.write(Extra)
 
     file.write('.\n \n') 
     file.close()    
     
-    
+    #----------------------------------------------
+
+#    if len(Extra) == 0:
+#       print('It is None')
+#   else:
+#       print ("It is defined and has a value")
+#       print ("is :", len(Extra))
+
+    #----------------------------------------------
     x = "Rapport validé"
-    return x 
+    return x
 
-eel.start("index.html") 
-
+eel.start("index.html")

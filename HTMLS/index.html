@@ -16,6 +16,11 @@
 
   <div class="container">
     
+<!-- Title ...................................................................... -->
+    <div class="title">RCR</div>
+
+  <div class="container">
+    
 <!-- Title of the Section...................................................................... -->
     <div class="title">Section calcul des performances de l’avion</div>
 <!-- Title of the Section...................................................................... -->
@@ -29,12 +34,13 @@
         <div class="user-details">
           <div class="input-box">
             <span class="details">ID d'emplacement</span>
-            <input type="text" placeholder="Entrer votre Code" id="idplace" required>
+            <input type="text" placeholder="(Ex GMAD)" id="idplace" required>
           </div>
           <div class="input-box">
-            <span class="details">Date&Time</span>
-            <input type="Time" placeholder="Enter your username" id="time" required>
+            <span class="details">MMDDhhmm</span>
+            <input type="Time" placeholder="Date et heure de l’évaluation" id="time" required>
           </div>
+
           <div class="input-box">
             <span class="details">ID de Piste</span>
             <input type="text" placeholder="Entrer votre ID " id="idpiste" required>
@@ -45,10 +51,11 @@
             <option value="L">L</option>
             <option value="R">R</option>
             <option value="C">C</option>
-            <option value="" disabled selected hidden>[L] ou [C] ou [R]</option>
+            <option value=""selected>NR</option>
             </select>
           </div>
         </div>
+
       </form>
 
       <span class="details">RWYCC : </span> 
@@ -63,7 +70,7 @@
             <option value="2">2</option>
             <option value="1">1</option>
             <option value="0">0</option>
-            <option value="" disabled selected hidden> [L] / . / .</option>
+            <option value="" disabled selected hidden>RWYCC du 1° tiers</option>
             </select>
           </div>
           <div class="input-box3">             
@@ -75,7 +82,7 @@
             <option value="2">2</option>
             <option value="1">1</option>
             <option value="0">0</option>
-            <option value="" disabled selected hidden> . / [C] / .</option>
+            <option value="" disabled selected hidden>RWYCC du 2° tiers</option>
             </select>
           </div>
           <div class="input-box3">             
@@ -87,13 +94,13 @@
             <option value="2">2</option>
             <option value="1">1</option>
             <option value="0">0</option>
-            <option value="" disabled selected hidden>. / . / [R]</option>
+            <option value="" disabled selected hidden>RWYCC du 3° tiers</option>
             </select>
           </div>
         </div>
       </form>
 
-      <span class="details">RWYCC % : </span> 
+      <span class="details">Pourcentage de couverture de contaminant : </span> 
       <form action="#">
         <div class="user-details3">
         <div class="input-box3">
@@ -102,7 +109,7 @@
             <option value="50">Entre 26	–	50%</option>
             <option value="75">Entre 51	–	75%</option>
             <option value="100">Entre 76–	100%</option>
-            <option value="" disabled selected hidden>% évalué [L] / . / .</option>
+            <option value="" disabled selected hidden>% évalué du 1° tiers</option>
           </select>
         </div>
         <div class="input-box3">
@@ -111,7 +118,7 @@
             <option value="50">Entre 26	–	50%</option>
             <option value="75">Entre 51	–	75%</option>
             <option value="100">Entre 76–	100%</option>
-            <option value="" disabled selected hidden>% évalué . / [C] / .</option>
+            <option value="" disabled selected hidden>% évalué du 2° tiers</option>
           </select>
         </div>
         <div class="input-box3">
@@ -120,7 +127,7 @@
             <option value="50">Entre 26	–	50%</option>
             <option value="75">Entre 51	–	75%</option>
             <option value="100">Entre 76–	100%</option>
-            <option value="" disabled selected hidden>% évalué . / . / [R]</option>
+            <option value="" disabled selected hidden>% évalué du 3° tiers</option>
           </select>
         </div>
           
@@ -147,7 +154,7 @@
               <option value="EAU SUR NEIGE COMPACTÉE">EAU SUR NEIGE COMPACTÉE</option>
               <option value="NEIGE SÈCHE SUR NEIGE COMPACTÉE">NEIGE SÈCHE SUR NEIGE COMPACTÉE</option>
               <option value="NEIGE MOUILLÉE SUR NEIGE COMPACTÉE">NEIGE MOUILLÉE SUR NEIGE COMPACTÉE</option>
-              <option value="NR" disabled selected hidden> [L] / . / .</option>
+              <option value="NR" disabled selected hidden>Desc d’état: 1° tiers</option>
             </select>
           </div>
           <div class="input-box3">             
@@ -167,7 +174,7 @@
               <option value="EAU SUR NEIGE COMPACTÉE">EAU SUR NEIGE COMPACTÉE</option>
               <option value="NEIGE SÈCHE SUR NEIGE COMPACTÉE">NEIGE SÈCHE SUR NEIGE COMPACTÉE</option>
               <option value="NEIGE MOUILLÉE SUR NEIGE COMPACTÉE">NEIGE MOUILLÉE SUR NEIGE COMPACTÉE</option>
-              <option value="NR" disabled selected hidden> . / [C] / .</option>
+              <option value="NR" disabled selected hidden>Desc d’état: 2° tiers</option>
             </select>
           </div>
           <div class="input-box3">             
@@ -187,7 +194,7 @@
               <option value="EAU SUR NEIGE COMPACTÉE">EAU SUR NEIGE COMPACTÉE</option>
               <option value="NEIGE SÈCHE SUR NEIGE COMPACTÉE">NEIGE SÈCHE SUR NEIGE COMPACTÉE</option>
               <option value="NEIGE MOUILLÉE SUR NEIGE COMPACTÉE">NEIGE MOUILLÉE SUR NEIGE COMPACTÉE</option>
-              <option value="NR" disabled selected hidden> . / . / [R]</option>
+              <option value="NR" disabled selected hidden>Desc d’état: 3° tiers</option>
             </select>
           </div>
         </div>
@@ -222,7 +229,7 @@
           
         </div>
       </form>
-<!-- First Section............................................................................. -->
+<!-- Second Section............................................................................. -->
 
 
 <!-- Title of the Section...................................................................... -->

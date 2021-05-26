@@ -1,5 +1,5 @@
 
-function Pickup() {
+function Pickup() { 
 
 // <!--  Form 1............................................................................. -->
     var Id = document.getElementById("idplace").value;
