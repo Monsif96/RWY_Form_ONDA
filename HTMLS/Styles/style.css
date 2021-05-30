@@ -6,6 +6,23 @@
   box-sizing: border-box;
   font-family: 'Poppins',sans-serif;
 }
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 20%;
+  background-color: #cebad5;
+  color: black;
+  text-align: center;
+  cursor: pointer;  
+}
+
+textarea{
+    font-weight: 200;
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
 body{
   height: auto;
   display: flex;
